@@ -1,0 +1,37 @@
+---
+title: Dynamically Set Footer Copyright Date
+date: '2018-11-20'
+images: ['/static/images/posts/2019.jpg']
+authors: ['chris']
+tags: ['javascript']
+draft: false
+canonicalUrl: https://www.google.com
+---
+
+<Image
+  className="w-full rounded-xl"
+  alt="two thousand nineteen"
+  src="/static/images/posts/2019.jpg"
+  layout="responsive"
+  width={450}
+  height={250}
+/>
+<TOCInline toc={props.toc} asDisclosure toHeading={3} />
+
+With 2018 winding down I found myself thinking that I will need to leave a note to update the footer on my site to change the year to 2019. Having to come back year after year to statically change the copyright year in my footer is something I will no longer do. So why not have it set dynamically?
+
+```html
+<script>
+  document.write(new Date().getFullYear())
+</script>
+```
+
+Instead of just adding the year I also included a copyright character and my name wrapping the new script.
+
+```html
+©
+<script>
+  document.write(new Date().getFullYear())
+</script>
+Chris Otto
+```
