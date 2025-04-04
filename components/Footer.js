@@ -18,12 +18,12 @@ export default function Footer() {
           <Link href={siteMetadata.github}>
             <FaGithub size={30} />
           </Link>
-          <Link href={siteMetadata.linkedin}>
+          {/* <Link href={siteMetadata.linkedin}>
             <FaLinkedin size={30} />
           </Link>
           <Link href={siteMetadata.twitter}>
             <FaTwitter size={30} />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </footer>

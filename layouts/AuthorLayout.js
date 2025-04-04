@@ -34,12 +34,12 @@ export default function AuthorLayout({ children, frontMatter }) {
               <Link href={github}>
                 <FaGithub size={30} />
               </Link>
-              <Link href={linkedin}>
+              {/* <Link href={linkedin}>
                 <FaLinkedin size={30} />
               </Link>
               <Link href={twitter}>
                 <FaTwitter size={30} />
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}</div>
