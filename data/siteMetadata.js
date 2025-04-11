@@ -10,7 +10,7 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.jpg',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'chris@chrisotto.dev',
+  email: 'suzukitaro506@gmail.com',
   github: 'https://github.com/sharmis-tp',
   // twitter: 'https://twitter.com/chris_otto6',
   // facebook: 'https://facebook.com',
