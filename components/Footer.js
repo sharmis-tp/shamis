@@ -12,7 +12,7 @@ export default function Footer() {
           <div>{`© ${new Date().getFullYear()}`}</div>
         </div>
         <div className="mb-3 flex space-x-8">
-          <Link href={`mailto:${siteMetadata.email}`}>
+          <Link href={`${siteMetadata.email}`}>
             <FaEnvelope size={30} />
           </Link>
           <Link href={siteMetadata.github}>

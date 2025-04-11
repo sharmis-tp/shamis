@@ -1,9 +1,22 @@
 import siteMetadata from '@/data/siteMetadata'
-import projectsData from '@/data/projectsData'
 import { PageSEO } from '@/components/SEO'
-import ProjectCard from '@/components/ProjectCard'
+import ProjectList from '@/layouts/ProjectList'
+import { getAllFilesFrontMatter } from '@/lib/mdx'
 
-export default function Projects() {
+export const POSTS_PER_PAGE = 5
+
+export async function getStaticProps() {
+  const posts = await getAllFilesFrontMatter('blog')
+  const initialDisplayPosts = posts.slice(0, POSTS_PER_PAGE)
+  const pagination = {
+    currentPage: 1,
+    totalPages: Math.ceil(posts.length / POSTS_PER_PAGE),
+  }
+
+  return { props: { initialDisplayPosts, posts, pagination } }
+}
+
+export default function Projects({ posts, initialDisplayPosts, pagination }) {
   return (
     <>
       <PageSEO title={`Projects - ${siteMetadata.author}`} description={siteMetadata.description} />
@@ -17,20 +30,12 @@ export default function Projects() {
           </p>
         </div>
         <div className="container py-12">
-          <div className="-m-4 flex flex-wrap place-content-center gap-16">
-            {projectsData.map((d) => (
-              <ProjectCard
-                key={d}
-                title={d.title}
-                description={d.description}
-                img={d.img}
-                tech={d.tech}
-                githubUrl={d.githuburl}
-                projectUrl={d.projecturl}
-                dataTestid={`project-card`}
-              />
-            ))}
-          </div>
+          <ProjectList
+            posts={posts}
+            initialDisplayPosts={initialDisplayPosts}
+            pagination={pagination}
+            title="All Posts"
+          />
         </div>
       </div>
     </>

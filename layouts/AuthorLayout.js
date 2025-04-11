@@ -28,7 +28,7 @@ export default function AuthorLayout({ children, frontMatter }) {
             <div className="text-gray-500 dark:text-gray-400">{occupation}</div>
             <div className="text-gray-500 dark:text-gray-400">{company}</div>
             <div className="flex space-x-4 pt-6">
-              <Link href={`mailto:${email}`}>
+              <Link href={`gmail:${email}`}>
                 <FaEnvelope size={30} />
               </Link>
               <Link href={github}>
