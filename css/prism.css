@@ -10,7 +10,7 @@
   @apply rounded-t bg-gray-700 px-5 py-3 font-mono text-sm font-bold text-gray-200;
 }
 
-.remark-code-title + div > pre {
+.remark-code-title+div>pre {
   @apply mt-0 rounded-t-none;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .highlight-line {
-  @apply -mx-4 border-l-4 border-primary-500  bg-gray-700 bg-opacity-50;
+  @apply -mx-4 border-l-4 border-primary-500 bg-gray-700 bg-opacity-50;
 }
 
 .line-number::before {
@@ -137,4 +137,18 @@
 
 .token.table {
   display: inline;
+}
+
+.w-31-rem {
+  width: 38rem;
+}
+
+.card {
+  transition: box-shadow .25s;
+}
+
+.card:hover {
+  --tw-scale-x: 102%;
+  --tw-scale-y: 102%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
