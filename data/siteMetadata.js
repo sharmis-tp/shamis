@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: 'Suzuki taro | Father, Developer, SDET',
+  title: 'Suzuki taro | Web3, Blockchain Developer',
   author: 'Suzuki taro',
   headerTitle: 'Suzuki taro',
   description: "Suzuki taro's Digital Garden.",
