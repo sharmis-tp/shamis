@@ -16,6 +16,14 @@ const projectsData = [
     projecturl: 'https://zionroyal.com/',
   },
   {
+    name: 'Playw3 gcoin',
+    description: 'Playw3 gcoin',
+    img: '/static/images/projects/playw3.com.gcoin.png',
+    tech: ['Blockchain', 'Solana'],
+    githuburl: '',
+    projecturl: 'https://playw3.com/gcoin',
+  },
+  {
     name: 'Job Board',
     description: 'Job Board',
     img: '/static/images/projects/staging.placements.100xdevs.png',

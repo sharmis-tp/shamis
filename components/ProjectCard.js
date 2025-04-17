@@ -22,14 +22,14 @@ const ProjectCard = ({ title, description, img, githubUrl, projectUrl, tech, dat
         </span>
       ))}
     </div>
-    <div className="mb-3 flex space-x-4 px-6 pt-3 pb-3">
+    {/* <div className="mb-3 flex space-x-4 px-6 pt-3 pb-3">
       <Link href={githubUrl}>
         <FaGithub size={30} />
       </Link>
       <Link href={projectUrl}>
         <FaExternalLinkSquareAlt size={30} />
       </Link>
-    </div>
+    </div> */}
   </div>
 )
 
